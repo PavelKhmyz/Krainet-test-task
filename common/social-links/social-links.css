@@ -1,0 +1,11 @@
+.social-links {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  .social-links__logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}

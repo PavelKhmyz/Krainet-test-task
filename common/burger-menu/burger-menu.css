@@ -1,0 +1,52 @@
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFFBF;
+
+  .burger-menu {
+    box-sizing: border-box;
+    width: 345px;
+    height: 100%;
+    background-color: #FFA501;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px 50px 40px;
+
+    .burger-menu__close-button {
+      align-self: flex-end;
+      background-color: inherit;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 72px;
+    }
+
+    .navigation {
+      .navigation__list {
+        font-size: 24px;
+        line-height: 36px;
+        font-weight: 700;
+        color: white;
+        list-style-image: url(./Marker.svg);
+        list-style-position: inside;
+
+        .navigation__link {
+          margin-top: 15px;
+
+          a {
+            margin-left: 13px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .social-links {
+      margin-top: 285px;
+      align-self: center;
+    }
+  }
+}

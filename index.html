@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./header/header.css">
+    <link rel="stylesheet" href="./common/social-networks/social-networks.css">
+    <link rel="stylesheet" href="./common/social-links/social-links.css">
+    <link rel="stylesheet" href="./common/title/title.css">
+    <link rel="stylesheet" href="./common/burger-menu/burger-menu.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./default.css">
+    <title>Krainet test task</title>
+</head>
+<body>
+  <header class="header">
+    <section class="social-networks">
+      <span class="social-networks__text">Социальные сети</span>
+      <div class="social-links">
+        <a class="social-links__logo">
+          <img src="./common/social-links/Github.svg" alt="GitHub Logo">
+        </a>
+        <a class="social-links__logo">
+          <img src="./common/social-links/Instagram.svg" alt="Instagram Logo">
+        </a>
+        <a class="social-links__logo">
+          <img src="./common/social-links/Facebook.svg" alt="Facebook Logo">
+        </a> 
+      </div>        
+    </section>
+
+    <section class="title">
+      <p class="title__name">Меня зовут Александра Смит</p>
+      <h1 class="title__text">Я web-разработчик из города Москва</h1>
+      <div class="title__anchors">
+        <a class="title__anchors_orange" href="#portfolio">
+          Портфолио
+        </a>
+        <a class="title__anchors_default" href="#about-me">
+          Про меня
+        </a>
+      </div>
+    </section>
+
+    <button class="header__burger-button" type="button">
+      <img src="./header/__burger-button/Hamburger.svg" alt="Burger button">
+    </button>
+
+    <div class="overlay"> 
+      <aside class="burger-menu">
+        <button class="burger-menu__close-button" type="button">
+          <img src="./common/burger-menu/Close.svg" alt="Close button">
+        </button>
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__link">
+              <a href="#about-me">ПРО МЕНЯ</a>
+            </li>
+            <li class="navigation__link">
+              <a href="#experience">МОЙ ОПЫТ</a>
+            </li>
+            <li class="navigation__link">
+              <a href="#skills">МОИ НАВЫКИ</a>
+            </li>
+            <li class="navigation__link">
+              <a href="#portfolio">МОИ РАБОТЫ</a>
+            </li>
+            <li class="navigation__link">
+              <a href="#price">ПРАЙС-ЛИСТ</a>
+            </li>
+            <li class="navigation__link">
+              <a href="#contact">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="social-links">
+          <a class="social-links__logo">
+            <img src="./common/social-links/Github.svg" alt="GitHub Logo">
+          </a>
+          <a class="social-links__logo">
+            <img src="./common/social-links/Instagram.svg" alt="Instagram Logo">
+          </a>
+          <a class="social-links__logo">
+            <img src="./common/social-links/Facebook.svg" alt="Facebook Logo">
+          </a> 
+        </div> 
+      </aside>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="experience" id="experience">
+      <h3 class="experience__sub-title">Опыт</h3>
+      <h1 class="experience__title">Чем я буду полезна</h1>
+
+      <table class="experience__table">
+        <thead class="experience__head">
+          <th class="experience__col experience__col_head experience__col_padding experience__col_border experience__col_padding-right" scope="col">Образование</th>
+          <th class="experience__col experience__col_head experience__col_padding experience__col_border" scope="col">Опыт работы</th>
+        </thead>
+        <tbody class="experience__body">
+
+          <tr class="experience__row">
+            <th class="experience__col experience__col_border experience__col_padding-right">
+              <div class="experience__col_body">
+                <img class="experience__icon" src="./University.svg">
+                <div>
+                  <h3 class="experience__text_title">МГТУ им. Н. Э. Баумана</h3>
+                  <p class="experience__text_sub-title">Диплом магистра | Москва (2014-2020)</p>
+                </div>
+              </div>              
+            </th>
+
+            <th class="experience__col experience__col_border">
+              <div class="experience__col_body">
+                <img class="experience__icon" src="./seo1.svg">
+                <div>
+                  <h3 class="experience__text_title">Front-End Developer</h3>
+                  <p class="experience__text_sub-title">EPAM | Москва (2018-2019)</p>
+                </div>
+              </div>
+            </th>
+          </tr>
+
+          <tr class="experience__row">
+            <td class="experience__col experience__text_sub-title experience__col_padding experience__col_border experience__col_padding-right">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+            </td>
+            <td class="experience__col experience__text_sub-title experience__col_padding experience__col_border">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+            </td>
+          </tr>
+
+          <tr class="experience__row">
+            <th class="experience__col experience__col_border experience__col_padding-right">
+              <div class="experience__col_body">
+                <img class="experience__icon" src="./Courses.svg">
+                <div>
+                  <h3 class="experience__text_title">Udemy</h3>
+                  <p class="experience__text_sub-title">Курсы по Web-разработке</p>
+                </div>
+              </div>
+            </th>
+            <th class="experience__col experience__col_border">
+              <div class="experience__col_body">
+                <img class="experience__icon" src="./designer.svg">
+                <div>
+                  <h3 class="experience__text_title">UI/UX Designer</h3>
+                  <p class="experience__text_sub-title">Squad Team | Москва (2018)</p>
+                </div>
+              </div>
+            </th>
+          </tr>
+
+          <tr class="experience__row">
+            <td class="experience__col experience__text_sub-title experience__col_border experience__col_padding-right">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+            </td>
+            <td class="experience__col experience__text_sub-title experience__col_border">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="./header/__burger-button/burger.js"></script>
+</body>
+</html>
