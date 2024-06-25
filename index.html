@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="./header/header.css">
-    <link rel="stylesheet" href="./common/social-networks/social-networks.css">
     <link rel="stylesheet" href="./common/social-links/social-links.css">
-    <link rel="stylesheet" href="./common/title/title.css">
     <link rel="stylesheet" href="./common/burger-menu/burger-menu.css">
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./default.css">
@@ -14,78 +12,80 @@
 </head>
 <body>
   <header class="header">
-    <section class="social-networks">
-      <span class="social-networks__text">Социальные сети</span>
+    <section class="header__social-networks">
+      <span class="header__text">Социальные сети</span>
       <div class="social-links">
-        <a class="social-links__logo">
-          <img src="./common/social-links/Github.svg" alt="GitHub Logo">
+        <a class="social-links__link">
+          <img class="social-links__logo" src="./common/social-links/Github.svg" alt="GitHub Logo">
         </a>
-        <a class="social-links__logo">
-          <img src="./common/social-links/Instagram.svg" alt="Instagram Logo">
+        <a class="social-links__link">
+          <img class="social-links__logo" src="./common/social-links/Instagram.svg" alt="Instagram Logo">
         </a>
-        <a class="social-links__logo">
-          <img src="./common/social-links/Facebook.svg" alt="Facebook Logo">
+        <a class="social-links__link">
+          <img class="social-links__logo" src="./common/social-links/Facebook.svg" alt="Facebook Logo">
         </a> 
       </div>        
     </section>
 
-    <section class="title">
-      <p class="title__name">Меня зовут Александра Смит</p>
-      <h1 class="title__text">Я web-разработчик из города Москва</h1>
-      <div class="title__anchors">
-        <a class="title__anchors_orange" href="#portfolio">
+    <section class="header__introducing">
+      <p class="header__name">Меня зовут Александра Смит</p>
+      <h1 class="header__profession">Я web-разработчик из города Москва</h1>
+      <div class="header__navigation-links">
+        <a class="header__link header__link_orange" href="#portfolio">
           Портфолио
         </a>
-        <a class="title__anchors_default" href="#about-me">
+        <a class="header__link" href="#about-me">
           Про меня
         </a>
       </div>
     </section>
 
-    <button class="header__burger-button" type="button">
-      <img src="./header/__burger-button/Hamburger.svg" alt="Burger button">
+    <button class="header__button" type="button">
+      <img src="./header/Hamburger.svg" alt="Burger button">
     </button>
 
-    <div class="overlay"> 
+    <div class="header__menu-overlay"> 
       <aside class="burger-menu">
         <button class="burger-menu__close-button" type="button">
           <img src="./common/burger-menu/Close.svg" alt="Close button">
         </button>
 
-        <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__link">
+        <nav class="burger-menu__navigation">
+          <ul class="burger-menu__list">
+            <li class="burger-menu__link">
               <a href="#about-me">ПРО МЕНЯ</a>
             </li>
-            <li class="navigation__link">
+            <li class="burger-menu__link">
               <a href="#experience">МОЙ ОПЫТ</a>
             </li>
-            <li class="navigation__link">
+            <li class="burger-menu__link">
               <a href="#skills">МОИ НАВЫКИ</a>
             </li>
-            <li class="navigation__link">
+            <li class="burger-menu__link">
               <a href="#portfolio">МОИ РАБОТЫ</a>
             </li>
-            <li class="navigation__link">
+            <li class="burger-menu__link">
               <a href="#price">ПРАЙС-ЛИСТ</a>
             </li>
-            <li class="navigation__link">
+            <li class="burger-menu__link">
               <a href="#contact">КОНТАКТЫ</a>
             </li>
           </ul>
         </nav>
         
-        <div class="social-links">
-          <a class="social-links__logo">
-            <img src="./common/social-links/Github.svg" alt="GitHub Logo">
-          </a>
-          <a class="social-links__logo">
-            <img src="./common/social-links/Instagram.svg" alt="Instagram Logo">
-          </a>
-          <a class="social-links__logo">
-            <img src="./common/social-links/Facebook.svg" alt="Facebook Logo">
-          </a> 
-        </div> 
+        <div class="burger-menu__social-networks">
+          <div class="social-links">
+            <a class="social-links__link">
+              <img class="social-links__logo" src="./common/social-links/Github.svg" alt="GitHub Logo">
+            </a>
+            <a class="social-links__link">
+              <img class="social-links__logo" src="./common/social-links/Instagram.svg" alt="Instagram Logo">
+            </a>
+            <a class="social-links__link">
+              <img class="social-links__logo" src="./common/social-links/Facebook.svg" alt="Facebook Logo">
+            </a> 
+          </div>
+        </div>
       </aside>
     </div>
   </header>
@@ -170,8 +170,47 @@
         </tbody>
       </table>
     </section>
+
+    <section class="contact" id="contact">
+      <img class="contact__photo" src="./Photo.png" alt="User photo">
+      <aside class="contact__ingormation">
+        <h3 class="contact__sub-title">Контакты</h3>
+        <h1 class="contact__title">Свяжитесь со мной</h1>
+        <p class="contact__text">Любым удобным для вас способом:</p>
+
+        <div class="social-links contact__social-links">
+          <a class="social-links__link">
+            <img class="social-links__logo" src="./FacebookBig.svg" alt="Facebook Logo">
+          </a>
+          <a class="social-links__link">
+            <img class="social-links__logo" src="./Telegram.svg" alt="Telegram Logo">
+          </a>
+          <a class="social-links__link">
+            <img class="social-links__logo" src="./InstagramBig.svg" alt="Instagram Logo">
+          </a> 
+        </div>
+
+        <p class="contact__text">Или оставьте ваши данные и я сама вам напишу:</p>
+
+        <form class="contact__form">
+          <div class="contact__wrapper">
+            <label for="name" class="contact__label">Ваше имя</label>
+            <input type="text" name="name" class="contact__input">
+          </div>
+          <div class="contact__wrapper">
+            <label for="email" class="contact__label">Ваша почта</label>
+            <input type="email" name="email" class="contact__input">
+          </div>
+          <div class="contact__wrapper contact__message-wrapper">
+            <label for="message" class="contact__label">Ваше сообщение</label>
+            <textarea name="message" class="contact__message"></textarea>
+          </div>
+          <button type="submit" class="contact__button">Отправить сообщение</button>
+        </form>
+      </aside>
+    </section>
   </main>
 
-  <script src="./header/__burger-button/burger.js"></script>
+  <script src="./header/burger.js"></script>
 </body>
 </html>
