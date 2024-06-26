@@ -9,6 +9,15 @@
   background-size: cover;
   position: relative;
 
+  @media (max-width: 640px) {
+    height: 640px;
+    padding: 20px 10px;
+  }
+
+  @media (max-width: 400px) {
+    background-image: url('./Header-background-mobile.png');
+  }
+
   .header__social-networks {
     position: absolute;
     top: 380px;
@@ -18,6 +27,10 @@
     flex-wrap: nowrap;
     transform: rotate(-90deg);
     align-self: center;
+
+    @media (max-width: 1300px) {
+      display: none;
+    }
   }
 
   .header__text {
@@ -72,6 +85,13 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
+
+    @media (max-width: 640px) {
+      margin-top: 9px;
+      font-size: 26px;
+      line-height: 39px;
+      width: 300px;
+    }
   }
 
   .header__navigation-links {
@@ -80,6 +100,10 @@
     align-items: center;
     gap: 10px;
     margin-top: 25px;
+
+    @media (max-width: 640px) {
+      margin-top: 32px;
+    }
   }
 
   .header__link {
@@ -90,6 +114,14 @@
     font-weight: 700;
     width: 135px;
     height: 45px;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &:active {
+      color: white;
+    }
   }
 
   .header__link_orange {
@@ -104,6 +136,14 @@
     top: 20px;
     border: none;
     cursor: pointer;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 640px) {
+      right: 10px;
+    }
   }
 
   .header__menu-overlay {

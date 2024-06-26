@@ -3,11 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="./header/header.css">
-    <link rel="stylesheet" href="./common/social-links/social-links.css">
-    <link rel="stylesheet" href="./common/burger-menu/burger-menu.css">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./default.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Krainet test task</title>
 </head>
 <body>
@@ -15,13 +11,13 @@
     <section class="header__social-networks">
       <span class="header__text">Социальные сети</span>
       <div class="social-links">
-        <a class="social-links__link">
+        <a class="social-links__link" href="https://github.com/">
           <img class="social-links__logo" src="./common/social-links/Github.svg" alt="GitHub Logo">
         </a>
-        <a class="social-links__link">
+        <a class="social-links__link" href="https://www.instagram.com/">
           <img class="social-links__logo" src="./common/social-links/Instagram.svg" alt="Instagram Logo">
         </a>
-        <a class="social-links__link">
+        <a class="social-links__link" href="https://www.facebook.com/">
           <img class="social-links__logo" src="./common/social-links/Facebook.svg" alt="Facebook Logo">
         </a> 
       </div>        
@@ -47,7 +43,7 @@
     <div class="header__menu-overlay"> 
       <aside class="burger-menu">
         <button class="burger-menu__close-button" type="button">
-          <img src="./common/burger-menu/Close.svg" alt="Close button">
+          <img class="burger-menu__close-button_img" src="./common/burger-menu/Close.svg" alt="Close button">
         </button>
 
         <nav class="burger-menu__navigation">
@@ -75,13 +71,13 @@
         
         <div class="burger-menu__social-networks">
           <div class="social-links">
-            <a class="social-links__link">
+            <a class="social-links__link" href="https://github.com/">
               <img class="social-links__logo" src="./common/social-links/Github.svg" alt="GitHub Logo">
             </a>
-            <a class="social-links__link">
+            <a class="social-links__link" href="https://www.instagram.com/">
               <img class="social-links__logo" src="./common/social-links/Instagram.svg" alt="Instagram Logo">
             </a>
-            <a class="social-links__link">
+            <a class="social-links__link" href="https://www.facebook.com/">
               <img class="social-links__logo" src="./common/social-links/Facebook.svg" alt="Facebook Logo">
             </a> 
           </div>
@@ -95,98 +91,86 @@
       <h3 class="experience__sub-title">Опыт</h3>
       <h1 class="experience__title">Чем я буду полезна</h1>
 
-      <table class="experience__table">
-        <thead class="experience__head">
-          <th class="experience__col experience__col_head experience__col_padding experience__col_border experience__col_padding-right" scope="col">Образование</th>
-          <th class="experience__col experience__col_head experience__col_padding experience__col_border" scope="col">Опыт работы</th>
-        </thead>
-        <tbody class="experience__body">
+      <section class="experience__table">
+        <div>
+          <p class="experience__col experience__col_head experience__col_padding-bottom experience__col_border">Образование</p>
 
-          <tr class="experience__row">
-            <th class="experience__col experience__col_border experience__col_padding-right">
-              <div class="experience__col_body">
-                <img class="experience__icon" src="./University.svg">
-                <div>
-                  <h3 class="experience__text_title">МГТУ им. Н. Э. Баумана</h3>
-                  <p class="experience__text_sub-title">Диплом магистра | Москва (2014-2020)</p>
-                </div>
-              </div>              
-            </th>
+          <div class="experience__col_body experience__col_border experience__col_body-mobile">
+            <img class="experience__icon" src="./common/experience/University.svg">
+            <div>
+              <h3 class="experience__text_title">МГТУ им. Н. Э. Баумана</h3>
+              <p class="experience__text_sub-title">Диплом магистра | Москва (2014-2020)</p>
+            </div>
+          </div>
 
-            <th class="experience__col experience__col_border">
-              <div class="experience__col_body">
-                <img class="experience__icon" src="./seo1.svg">
-                <div>
-                  <h3 class="experience__text_title">Front-End Developer</h3>
-                  <p class="experience__text_sub-title">EPAM | Москва (2018-2019)</p>
-                </div>
-              </div>
-            </th>
-          </tr>
+          <p class="experience__col experience__text_sub-title experience__col_padding-bottom experience__col_border">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+          </p>
 
-          <tr class="experience__row">
-            <td class="experience__col experience__text_sub-title experience__col_padding experience__col_border experience__col_padding-right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-              labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
-            </td>
-            <td class="experience__col experience__text_sub-title experience__col_padding experience__col_border">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-              labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
-            </td>
-          </tr>
+          <div class="experience__col_body experience__col_border">
+            <img class="experience__icon" src="./common/experience/Courses.svg">
+            <div>
+              <h3 class="experience__text_title">Udemy</h3>
+              <p class="experience__text_sub-title">Курсы по Web-разработке</p>
+            </div>
+          </div>
 
-          <tr class="experience__row">
-            <th class="experience__col experience__col_border experience__col_padding-right">
-              <div class="experience__col_body">
-                <img class="experience__icon" src="./Courses.svg">
-                <div>
-                  <h3 class="experience__text_title">Udemy</h3>
-                  <p class="experience__text_sub-title">Курсы по Web-разработке</p>
-                </div>
-              </div>
-            </th>
-            <th class="experience__col experience__col_border">
-              <div class="experience__col_body">
-                <img class="experience__icon" src="./designer.svg">
-                <div>
-                  <h3 class="experience__text_title">UI/UX Designer</h3>
-                  <p class="experience__text_sub-title">Squad Team | Москва (2018)</p>
-                </div>
-              </div>
-            </th>
-          </tr>
+          <p class="experience__col experience__text_sub-title experience__col_border">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+          </p>
 
-          <tr class="experience__row">
-            <td class="experience__col experience__text_sub-title experience__col_border experience__col_padding-right">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-              labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
-            </td>
-            <td class="experience__col experience__text_sub-title experience__col_border">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-              labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
-            </td>
-          </tr>
+        </div>
 
-        </tbody>
-      </table>
+        <div>
+          <p class="experience__col experience__col_head experience__col_padding-bottom experience__col_border" scope="col">Опыт работы</p>
+
+          <div class="experience__col_body experience__col_border">
+            <img class="experience__icon" src="./common/experience/seo1.svg">
+            <div>
+              <h3 class="experience__text_title">Front-End Developer</h3>
+              <p class="experience__text_sub-title">EPAM | Москва (2018-2019)</p>
+            </div>
+          </div>
+
+          <p class="experience__col experience__text_sub-title experience__col_padding-bottom experience__col_border">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+          </p>
+
+          <div class="experience__col_body experience__col_border">
+            <img class="experience__icon" src="./common/experience/designer.svg">
+            <div>
+              <h3 class="experience__text_title">UI/UX Designer</h3>
+              <p class="experience__text_sub-title">Squad Team | Москва (2018)</p>
+            </div>
+          </div>
+
+          <p class="experience__col experience__text_sub-title experience__col_border">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+          </p>
+        </div>
+      </section>
     </section>
 
     <section class="contact" id="contact">
-      <img class="contact__photo" src="./Photo.png" alt="User photo">
+      <img class="contact__photo" src="./common/contact/Photo.png" alt="User photo">
       <aside class="contact__ingormation">
         <h3 class="contact__sub-title">Контакты</h3>
         <h1 class="contact__title">Свяжитесь со мной</h1>
         <p class="contact__text">Любым удобным для вас способом:</p>
 
         <div class="social-links contact__social-links">
-          <a class="social-links__link">
-            <img class="social-links__logo" src="./FacebookBig.svg" alt="Facebook Logo">
+          <a class="social-links__link" href="https://www.facebook.com/">
+            <img class="social-links__logo" src="./common/social-links/FacebookBig.svg" alt="Facebook Logo">
           </a>
-          <a class="social-links__link">
-            <img class="social-links__logo" src="./Telegram.svg" alt="Telegram Logo">
+          <a class="social-links__link" href="https://web.telegram.org/a/">
+            <img class="social-links__logo" src="./common/social-links/Telegram.svg" alt="Telegram Logo">
           </a>
-          <a class="social-links__link">
-            <img class="social-links__logo" src="./InstagramBig.svg" alt="Instagram Logo">
+          <a class="social-links__link" href="https://www.instagram.com/">
+            <img class="social-links__logo" src="./common/social-links/InstagramBig.svg" alt="Instagram Logo">
           </a> 
         </div>
 
@@ -194,23 +178,31 @@
 
         <form class="contact__form">
           <div class="contact__wrapper">
-            <label for="name" class="contact__label">Ваше имя</label>
-            <input type="text" name="name" class="contact__input">
+            <label for="name" class="contact__label" id="name-label">Ваше имя</label>
+            <input type="text" name="name" class="contact__input" id="name">
+            <p class="contact__error" id="name-error"></p>
           </div>
           <div class="contact__wrapper">
-            <label for="email" class="contact__label">Ваша почта</label>
-            <input type="email" name="email" class="contact__input">
+            <label for="email" class="contact__label" id="email-label">Ваша почта</label>
+            <input type="email" name="email" class="contact__input" id="email">
+            <p class="contact__error" id="email-error"></p>
           </div>
-          <div class="contact__wrapper contact__message-wrapper">
-            <label for="message" class="contact__label">Ваше сообщение</label>
-            <textarea name="message" class="contact__message"></textarea>
+          <div class="contact__wrapper contact__wrapper_message">
+            <label for="message" class="contact__label" id="message-label">Ваше сообщение</label>
+            <textarea name="message" class="contact__message" id="message"></textarea>
+            <p class="contact__error" id="message-error"></p>
           </div>
-          <button type="submit" class="contact__button">Отправить сообщение</button>
+          <div class="contact__wrapper_privacy">
+            <input type="checkbox" name="privacy" class="contact__input_privacy">
+            <label for="privacy" class="contact__label_privacy" id="privacy">Я согласен(а) <a>с политикой конфиденциальности</a></label>
+          </div>
+          <button type="button" class="contact__button">Отправить сообщение</button>
         </form>
       </aside>
     </section>
   </main>
 
   <script src="./header/burger.js"></script>
+  <script src="./common/contact/contact.js"></script>
 </body>
 </html>
