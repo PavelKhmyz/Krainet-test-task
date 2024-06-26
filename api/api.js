@@ -10,17 +10,19 @@ class MessagesApi {
   }
 
   async POST(endpoint, body) {
-    try {
-      return await fetch(
-        this.url + endpoint, {
-        ...this.config,
-        method: 'POST',
-        body,
-      })
-    } catch {
-      throw new Error('Что-то пошло не так');
+    const response = await fetch(
+      this.url + endpoint, {
+      ...this.config,
+      method: 'POST',
+      body,
+    })
+
+    if (response.ok) {
+      alert('Сообщение успешно отправленно!')
+    } else {
+      alert('Что-то пошло не так!')
     }
   }
 }
 
-export const messagesApi = new MessagesApi();
+const messagesApi = new MessagesApi();
