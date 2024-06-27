@@ -1,3 +1,5 @@
+import { messagesApi } from '../../api/api';
+
 document.getElementById('name').addEventListener('blur', (event) => nameValidator(event.target.value));
 document.getElementById('email').addEventListener('blur', (event) => emailValidator(event.target.value));
 document.getElementById('message').addEventListener('blur', (event) => messageValidator(event.target.value));
