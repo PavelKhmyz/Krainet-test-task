@@ -1,11 +1,11 @@
-const apiUrl = 'https://662d2a110547cdcde9e01b5d.mockapi.io/ea/mock';
-
 class MessagesApi {
   url;
   config;
 
   constructor(url, config) {
-    this.url = url ? url : apiUrl;
+    const apiDefaultUrl = import.meta.env.VITE_MOCK_API_URL
+
+    this.url = url ? url : apiDefaultUrl;
     this.config = config ? config : {};
   }
 
@@ -14,7 +14,10 @@ class MessagesApi {
       this.url + endpoint, {
       ...this.config,
       method: 'POST',
-      body,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
     })
 
     if (response.ok) {
@@ -25,4 +28,4 @@ class MessagesApi {
   }
 }
 
-const messagesApi = new MessagesApi();
+export const messagesApi = new MessagesApi();
